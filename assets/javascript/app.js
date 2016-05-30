@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  console.log("ready");
+  console.log("ready!");
 
   var sportOne = {
     question: 'Who said "Baseball is 90% mental. The other half is physical"?',
@@ -36,4 +36,4 @@ $( document ).ready(function() {
   };
 
 
-}
+});
