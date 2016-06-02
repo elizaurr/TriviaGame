@@ -6,9 +6,9 @@ $( document ).ready(function() {
     choice1: 'Yogi Berra',
     choice2: 'David Ortiz',
     choice3: 'Derek Jeter',
-    Choice4: 'Babe Ruth',
+    choice4: 'Babe Ruth',
     answer: 'Yogi Berra',
-    info: "<img src='assets/images/yogi.jpg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/yogi.jpg'>"
   };
 
   var sportTwo = {
@@ -16,9 +16,9 @@ $( document ).ready(function() {
     choice1: 'Kobe Bryant',
     choice2: 'Karl Malone',
     choice3: 'Patrick Ewing',
-    Choice4: 'Bill Russell',
+    choice4: 'Bill Russell',
     answer: 'Bill Russell',
-    info: "<img src='assets/images/russell.gif'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/russell.gif'>"
   };
 
   var sportThree = {
@@ -26,9 +26,9 @@ $( document ).ready(function() {
     choice1: 'Alex Ovechkin',
     choice2: 'Sidney Crobsy',
     choice3: 'Jaromir Jagr',
-    Choice4: 'Wayne Gretzky',
+    choice4: 'Wayne Gretzky',
     answer: 'Wayne Gretzky',
-    info: "<img src='assets/images/wayne.jpeg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/wayne.jpeg'>"
   };
 
   var sportFour = {
@@ -36,9 +36,9 @@ $( document ).ready(function() {
     choice1: 'UCLA',
     choice2: 'North Carolina',
     choice3: 'UCONN', 
-    Choice4: 'Rutgers',
+    choice4: 'Rutgers',
     answer: 'UCLA',
-    info: "<img src='assets/images/ucla.jpeg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/ucla.jpeg'>"
   };
 
   var sportFive = {
@@ -46,9 +46,9 @@ $( document ).ready(function() {
     choice1: '1',
     choice2: '3',
     choice3: '5',
-    Choice4: '6',
+    choice4: '6',
     answer: '5',
-    info: "<img src='assets/images/mj.gif'>"
+    info: "<img  class='img-responsive' width=400 src='assets/images/mj.gif'>"
   };
 
   var sportSix = {
@@ -56,9 +56,9 @@ $( document ).ready(function() {
     choice1: 'Tim Teabow',
     choice2: 'Archie Griffin',
     choice3: 'Tim Brown',
-    Choice4: 'Desmond Howard',
+    choice4: 'Desmond Howard',
     answer: 'Archie Griffin',
-    info: "<img src='assets/images/archie.jpg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/archie.jpg'>"
   };
 
   var sportSeven = {
@@ -66,9 +66,9 @@ $( document ).ready(function() {
     choice1: 'Hank Arron',
     choice2: 'Ty Cobb',
     choice3: 'Barry Bonds',
-    Choice4: 'Ken Griffey Jr.',
-    answer: 'Barry Bonds'
-    info: "<img src='assets/images/bonds,gif'>"
+    choice4: 'Ken Griffey Jr.',
+    answer: 'Barry Bonds', 
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/bonds.gif'>"
   };
 
   var sportEight = {
@@ -76,9 +76,9 @@ $( document ).ready(function() {
     choice1: 'Walt Chamberlain',
     choice2: 'Michael Jordan', 
     choice3: 'Kobe Bryant',
-    Choice4: 'Kareem Abdul-Jabbar',
+    choice4: 'Kareem Abdul-Jabbar',
     answer: 'Kareem Abdul-Jabbar',
-    info: "<img src='assets/images/jabbar.jpeg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/jabbar.jpeg'>"
   };
 
   var sportNine = {
@@ -86,9 +86,9 @@ $( document ).ready(function() {
     choice1: 'Emmitt Smith',
     choice2: 'Walter Payton',
     choice3: 'Barry Sanders',
-    Choice4: 'Curtis Martin',
+    choice4: 'Curtis Martin',
     answer: 'Emmitt Smith',
-    info: "<img src='assets/images/smith.gif'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/smith.gif'>"
   };
 
   var sportTen = {
@@ -96,9 +96,9 @@ $( document ).ready(function() {
     choice1: 'Cy Young',
     choice2: 'Randy Johnson',
     choice3: 'Sandy Koafax',
-    Choice4: 'Pedro Martinez',
+    choice4: 'Pedro Martinez',
     answer: 'Cy Young',
-    info: "<img src='assets/images/cy.jpeg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/cy.jpeg'>"
   };
 
   var triviaQuestion = [sportOne,sportTwo,sportThree,sportFour,sportFive,sportSix,sportSeven,sportEight,sportNine,sportTen];
@@ -134,7 +134,7 @@ $( document ).ready(function() {
       stop();
       $(".choice").empty();
     }
-    else (time<10) {
+    else if (time < 10) {
       $(".timer").addClass("red");
       setTimeout(function(){$(".timer").removeClass("red")},500)
     };
@@ -160,20 +160,20 @@ $( document ).ready(function() {
 
   function wronganswer() {
     numberWrong++;
-    $(".question").html("<p>Wrong! <br> The correct answer was: "+questions[num].answer+"</p>");
+    $(".question").html("<p>Wrong! <br> The correct answer was: " + questions[num].answer + "</p>");
     $(".info").html("<p>"+questions[num].info+"</p>");
   };
 
 
   function timeout() {
     numTimeout++;
-    $(".question").html("<p>Time's up! <br> The correct answer was: "+questions[num].answer+"</p>");
+    $(".question").html("<p>Time's up! <br> The correct answer was: " + questions[num].answer + "</p>");
     $(".info").html("<p>"+questions[num].info+"</p>");
   };
 
   function endgame() {
-    $(".question").html("<h2>You got " + numberCorrect + "answers correct!</h2>"
-       + "<h2>You got" +numberWrong + "wrong!</h2>" + "<h2>You didn't answer" + numTimeout + "questions</h2>");
+    $(".question").html("<h2>You got " + numberCorrect + " answers correct!</h2>"
+       + "<h2>You got " + numberWrong + " wrong!</h2>" + "<h2>You didn't answer "  + numTimeout +  " questions</h2>");
     $(".choice").empty();
     $("timer").empty();
     $(".info").empty();
@@ -183,13 +183,12 @@ $( document ).ready(function() {
     numTimeout = 0;
     $("button").show();
   };
-
-  $(".startButton").click(function) {
+  $(".startButton").click(function(){
     questions = triviaQuestion;
     nextquestion();
     $("button").hide();
     $(".intro").hide();
-  });
+  }) 
 
   $(".choice").click(function() {
 
