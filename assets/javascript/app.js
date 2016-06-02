@@ -129,7 +129,7 @@ $( document ).ready(function() {
   function increment() {
     time--
     $(".timer").html("<h2>Time Remaining; " + time + "</h2>")
-    if (time ===0) {
+    if (time == 0) {
       timeout();
       stop();
       $(".choice").empty();
@@ -144,7 +144,7 @@ $( document ).ready(function() {
   function stop() {
     clearInterval(counter);
     num++;
-    if (num=== questions.length) {
+    if (num == questions.length) {
       setTimeout(endgame,5000);
     }
     else {
@@ -170,6 +170,43 @@ $( document ).ready(function() {
     $(".question").html("<p>Time's up! <br> The correct answer was: "+questions[num].answer+"</p>");
     $(".info").html("<p>"+questions[num].info+"</p>");
   };
+
+  function endgame() {
+    $(".question").html("<h2>You got " + numberCorrect + "answers correct!</h2>"
+       + "<h2>You got" +numberWrong + "wrong!</h2>" + "<h2>You didn't answer" + numTimeout + "questions</h2>");
+    $(".choice").empty();
+    $("timer").empty();
+    $(".info").empty();
+    num = 0;
+    numberCorrect = 0;
+    numberWrong = 0;
+    numTimeout = 0;
+    $("button").show();
+  };
+
+  $(".startButton").click(function) {
+    questions = triviaQuestion;
+    nextquestion();
+    $("button").hide();
+    $(".intro").hide();
+  });
+
+  $(".choice").click(function() {
+
+      if($(this).text() == questions[num].answer) {
+        numberCorrect++;
+        correctanswer();
+        stop();
+      }
+
+      else {
+        wronganswer();
+        stop();
+      };
+
+      $(".choice").empty();
+
+  });
 
   
 
