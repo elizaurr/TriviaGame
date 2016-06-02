@@ -8,7 +8,7 @@ $( document ).ready(function() {
     choice3: 'Derek Jeter',
     choice4: 'Babe Ruth',
     answer: 'Yogi Berra',
-    info: "<img  class= 'img-responsive' width=400 src='assets/images/yogi.jpg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/yogi.gif'>"
   };
 
   var sportTwo = {
@@ -28,7 +28,7 @@ $( document ).ready(function() {
     choice3: 'Jaromir Jagr',
     choice4: 'Wayne Gretzky',
     answer: 'Wayne Gretzky',
-    info: "<img  class= 'img-responsive' width=400 src='assets/images/wayne.jpeg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/wayne.gif'>"
   };
 
   var sportFour = {
@@ -78,7 +78,7 @@ $( document ).ready(function() {
     choice3: 'Kobe Bryant',
     choice4: 'Kareem Abdul-Jabbar',
     answer: 'Kareem Abdul-Jabbar',
-    info: "<img  class= 'img-responsive' width=400 src='assets/images/jabbar.jpeg'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/abdul.gif'>"
   };
 
   var sportNine = {
@@ -88,7 +88,7 @@ $( document ).ready(function() {
     choice3: 'Barry Sanders',
     choice4: 'Curtis Martin',
     answer: 'Emmitt Smith',
-    info: "<img  class= 'img-responsive' width=400 src='assets/images/smith.gif'>"
+    info: "<img  class= 'img-responsive' width=400 src='assets/images/emmitt.gif'>"
   };
 
   var sportTen = {
