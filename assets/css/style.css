@@ -6,6 +6,13 @@ body {
   background-size: cover;
 }
 
+.container {
+  border: solid;
+  background-clip: padding-box;
+  background: blue;
+  border-color: white;
+}
+
 .choice {
   cursor: pointer;
 }
