@@ -1,5 +1,5 @@
-html { 
-  background: url('') no-repeat center center fixed; 
+body { 
+  background: url('http://www.motionbackgroundsforfree.com/wp-content/uploads/2012/06/Screen-shot-2012-06-28-at-11.14.46-AM.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,3 +10,74 @@ html {
 .choice {
   cursor: pointer;
 }
+
+.startButton {
+  color: white;
+  font-family: Lobster;
+  font-weight: 900;
+  font-size: 75px;
+  border: solid;
+  border-color: blue;
+  background-clip: padding-box;
+  background: red;
+
+}
+
+h1 {
+  color: white;
+  font-family: Lobster;
+  font-weight: 900;
+  font-size: 75px;
+  border: solid;
+  border-color: blue;
+  background-clip: padding-box;
+  background: red;
+}
+
+.intro {
+  color: white;
+  font-family: Lobster;
+  font-weight: 900;
+  font-size: 75px;
+  border: solid;
+  border-color: blue;
+  background-clip: padding-box;
+  background: red;
+}
+
+ .choice {
+  color: white;
+  font-family: Rubik;
+  font-weight: 900;
+  font-size: 21px;
+  border: solid;
+  border-color: blue;
+  background-clip: padding-box;
+  background: red;
+
+}
+
+.question {
+  color: white;
+  font-family: Rubik;
+  font-weight: 900;
+  font-size: 21px;
+  border: solid;
+  border-color: blue;
+  background-clip: padding-box;
+  background: red;
+
+}
+
+.timer {
+  color: white;
+  font-family: Rubik;
+  font-weight: 900;
+  font-size: 21px;
+  border: solid;
+  border-color: blue;
+  background-clip: padding-box;
+  background: red;
+}
+
+
