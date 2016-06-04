@@ -6,7 +6,6 @@ body {
   background-size: cover;
 }
 
-
 .choice {
   cursor: pointer;
 }
@@ -15,7 +14,7 @@ body {
   color: white;
   font-family: Lobster;
   font-weight: 900;
-  font-size: 75px;
+  font-size: 30px;
   border: solid;
   border-color: blue;
   background-clip: padding-box;
